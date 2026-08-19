@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Past Performances — Manchester Choral Society</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .season-group {
+    margin-bottom: 3rem;
+  }
+  .season-group h2 {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .video-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .video-card .thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--tint, #f2f2f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .video-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .video-card .thumb .play-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-card .thumb .play-icon::after {
+    content: "";
+    border-style: solid;
+    border-width: 8px 0 8px 14px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 3px;
+  }
+  .video-card .thumb .no-video {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--muted);
+    text-align: center;
+    padding: 1rem;
+  }
+  .video-card .watch-badge {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+  }
+  .video-card .watch-badge:hover {
+    background: rgba(0,0,0,0.9);
+  }
+  .video-card .watch-badge .mini-play {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #fff;
+  }
+  .video-card .info {
+    padding: 0.9rem 1rem;
+  }
+  .video-card .info h3 {
+    font-size: 1.02rem;
+    margin-bottom: 0.2rem;
+  }
+  .video-card .info .date {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .empty-note {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .archive-note {
+    max-width: 62ch;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">Manchester Choral Society<small>Manchester, New Hampshire</small></a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="auditions.html">Auditions</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="past-performances.html" aria-current="page">Past Performances</a></li>
+        <li><a href="archive.html">Full Archive</a></li>
+        <li><a href="advertisers.html">Advertisers</a></li>
+        <li><a href="meet-the-choir.html">Meet the Choir</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Photos &amp; Video</p>
+    <h1>Past Performances</h1>
+    <p>Concert photos from Manchester Choral Society's last five seasons, with video where available.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap" id="performancesContainer">
+    <!-- Season groups are rendered here by JS -->
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Looking for something older?</p>
+      <h2>Full performance archive</h2>
+    </div>
+    <p class="archive-note">
+      MCS has performed continuously since 1961. Explore our
+      <a href="archive.html">full performance archive</a> for concert programs from
+      seasons throughout our history.
+    </p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Manchester Choral Society</h4>
+      <a href="about.html">About</a>
+      <a href="join.html">Join Us</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="past-performances.html">Past Performances</a>
+      <a href="advertisers.html">Advertisers</a>
+      <a href="meet-the-choir.html">Meet the Choir</a>
+      <a href="members.html">Members</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:info@mcsnh.org">info@mcsnh.org</a>
+      <a href="join.html">Registration form</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Manchester Choral Society. Manchester, New Hampshire.</div>
+</footer>
+
+<script src="performances-data.js"></script>
+<script>
+  function renderVideoCard(perf) {
+    // Image is the primary content for every tile
+    const thumbHtml = perf.image
+      ? `<img src="${perf.image}" alt="${perf.title}">`
+      : `<div class="no-video">Photo coming soon</div>`;
+
+    // YouTube link is optional — only shown as a small badge when a video exists
+    const watchBadge = perf.youtubeId
+      ? `<a class="watch-badge" href="https://www.youtube.com/watch?v=${perf.youtubeId}" target="_blank" rel="noopener"><span class="mini-play"></span>Watch</a>`
+      : "";
+
+    return `
+      <div class="video-card">
+        <div class="thumb">${thumbHtml}${watchBadge}</div>
+        <div class="info">
+          <h3>${perf.title}</h3>
+          <div class="date">${perf.date}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPerformances() {
+    const container = document.getElementById("performancesContainer");
+    const performances = (typeof PAST_PERFORMANCES !== "undefined") ? PAST_PERFORMANCES : [];
+
+    if (performances.length === 0) {
+      container.innerHTML = `<p class="empty-note">Concert photos are being added soon — check back shortly!</p>`;
+      return;
+    }
+
+    // Group by season, preserving the order seasons first appear in the data (most recent first)
+    const seasons = [];
+    const grouped = {};
+    performances.forEach(p => {
+      if (!grouped[p.season]) {
+        grouped[p.season] = [];
+        seasons.push(p.season);
+      }
+      grouped[p.season].push(p);
+    });
+
+    let html = "";
+    seasons.forEach(season => {
+      html += `
+        <div class="season-group">
+          <h2>${season}</h2>
+          <div class="video-grid">
+            ${grouped[season].map(renderVideoCard).join("")}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  renderPerformances();
+</script>
+
+</body>
+</html>
