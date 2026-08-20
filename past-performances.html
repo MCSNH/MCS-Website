@@ -29,17 +29,18 @@
   .video-card .thumb {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
     background: var(--tint, #f2f2f2);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
   }
   .video-card .thumb img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
     display: block;
   }
   .video-card .thumb .play-icon {
@@ -126,7 +127,6 @@
         <li><a href="auditions.html">Auditions</a></li>
         <li><a href="concerts.html">Concerts</a></li>
         <li><a href="past-performances.html" aria-current="page">Past Performances</a></li>
-        <li><a href="archive.html">Full Archive</a></li>
         <li><a href="advertisers.html">Advertisers</a></li>
         <li><a href="meet-the-choir.html">Meet the Choir</a></li>
         <li><a href="members.html">Members</a></li>
@@ -188,9 +188,9 @@
 <script src="performances-data.js"></script>
 <script>
   function renderVideoCard(perf) {
-    // Image is the primary content for every tile
+    // Image is the primary content for every tile — clickable to view full-size
     const thumbHtml = perf.image
-      ? `<img src="${perf.image}" alt="${perf.title}">`
+      ? `<a href="${perf.image}" target="_blank" rel="noopener"><img src="${perf.image}" alt="${perf.title}"></a>`
       : `<div class="no-video">Photo coming soon</div>`;
 
     // YouTube link is optional — only shown as a small badge when a video exists
