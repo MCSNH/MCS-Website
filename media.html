@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media — Manchester Choral Society</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .media-card {
+    border: 1px solid var(--line);
+    background: #FFF;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .media-card:hover { border-color: var(--brass); box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+  .media-card .eyebrow { margin-bottom: 0.6rem; }
+  .media-card h3 { font-size: 1.4rem; margin-bottom: 0.6rem; }
+  .media-card p { color: var(--muted); font-size: 0.95rem; }
+  @media (max-width: 780px) { .media-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">Manchester Choral Society<small>Manchester, New Hampshire</small></a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="advertisers.html">Advertisers</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">See &amp; Hear MCS</p>
+    <h1>Media</h1>
+    <p>Photos, videos, and social media from Manchester Choral Society.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="media-grid">
+      <a class="media-card" href="photos.html">
+        <p class="eyebrow">Gallery</p>
+        <h3>Photos</h3>
+        <p>Concert and rehearsal photos from recent seasons.</p>
+      </a>
+      <a class="media-card" href="videos.html">
+        <p class="eyebrow">Watch</p>
+        <h3>Videos</h3>
+        <p>Performance footage from our last five seasons.</p>
+      </a>
+      <a class="media-card" href="social.html">
+        <p class="eyebrow">Follow Along</p>
+        <h3>Social</h3>
+        <p>Find us on Facebook and Instagram.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Manchester Choral Society</h4>
+      <a href="about.html">About</a>
+      <a href="join.html">Join Us</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="media.html">Media</a>
+      <a href="advertisers.html">Advertisers</a>
+      <a href="members.html">Members</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:info@mcsnh.org">info@mcsnh.org</a>
+      <a href="join.html">Registration form</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Manchester Choral Society. Manchester, New Hampshire.</div>
+</footer>
+
+</body>
+</html>

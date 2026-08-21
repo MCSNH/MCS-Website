@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet the Choir — Manchester Choral Society</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .officer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  .officer-card {
+    border: 1px solid var(--line);
+    background: #FFF;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .officer-card h3 { font-size: 1.05rem; margin-bottom: 0.2rem; }
+  .officer-card .role { color: var(--brass); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  .featured-coming-soon {
+    text-align: center;
+    padding: 3rem 1rem;
+    border: 1px dashed var(--line);
+    background: var(--paper-tint);
+  }
+  .featured-coming-soon h2 { margin-bottom: 0.5rem; }
+
+  .voice-group { margin-bottom: 3rem; }
+  .voice-group h2 {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .choir-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .choir-card {
+    border: 1px solid var(--line);
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .choir-card img {
+    width: 96px; height: 96px;
+    object-fit: cover; border-radius: 50%;
+    margin: 0 auto 0.9rem; display: block;
+    background: var(--tint, #f2f2f2);
+  }
+  .choir-card .no-photo {
+    width: 96px; height: 96px; border-radius: 50%;
+    margin: 0 auto 0.9rem; background: var(--tint, #f2f2f2);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--muted);
+  }
+  .choir-card h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+  .choir-card .bio { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+  .empty-note { color: var(--muted); font-size: 0.95rem; text-align: center; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">Manchester Choral Society<small>Manchester, New Hampshire</small></a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="advertisers.html">Advertisers</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Soprano, Alto, Tenor, Baritone &amp; Bass</p>
+    <h1>Meet the Choir</h1>
+    <p>The people who make up Manchester Choral Society's 66th season.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Leadership</p>
+      <h2>Officers &amp; Board Members</h2>
+    </div>
+
+    <h3 style="margin-top:2rem;">Officers</h3>
+    <div class="officer-grid">
+      <div class="officer-card">
+        <h3>Kim Wertz</h3>
+        <p class="role">President</p>
+      </div>
+      <div class="officer-card">
+        <h3>Christina Pare</h3>
+        <p class="role">Vice President</p>
+      </div>
+      <div class="officer-card">
+        <h3>David Betz</h3>
+        <p class="role">Treasurer</p>
+      </div>
+      <div class="officer-card">
+        <h3>Darah Dal Pra</h3>
+        <p class="role">Secretary</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2.5rem;">Board Members</h3>
+    <div class="officer-grid">
+      <div class="officer-card"><h3>Dan Wells</h3></div>
+      <div class="officer-card"><h3>Susan Bureau</h3></div>
+      <div class="officer-card"><h3>Jacki Gallagher</h3></div>
+      <div class="officer-card"><h3>Sheila Cuneo</h3></div>
+    </div>
+
+    <h3 style="margin-top:2.5rem;">Section Leaders</h3>
+    <div class="officer-grid">
+      <div class="officer-card">
+        <h3>Michelle Harrington</h3>
+        <p class="role">Sopranos</p>
+      </div>
+      <div class="officer-card">
+        <h3>Jen Farquar</h3>
+        <p class="role">Altos</p>
+      </div>
+      <div class="officer-card">
+        <h3>Darah Dal Pra</h3>
+        <p class="role">Tenors</p>
+      </div>
+      <div class="officer-card">
+        <h3>Mike Corey</h3>
+        <p class="role">Basses</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Spotlight</p>
+      <h2>Featured Member</h2>
+    </div>
+    <div class="featured-coming-soon">
+      <h2>Coming Soon!</h2>
+      <p style="color: var(--muted);">Check back to meet a different MCS member each season.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap" id="choirContainer">
+    <!-- Voice groups are rendered here by JS -->
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Manchester Choral Society</h4>
+      <a href="about.html">About</a>
+      <a href="join.html">Join Us</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="media.html">Media</a>
+      <a href="members.html">Members</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:info@mcsnh.org">info@mcsnh.org</a>
+      <a href="join.html">Registration form</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Manchester Choral Society. Manchester, New Hampshire.</div>
+</footer>
+
+<script src="members-data.js"></script>
+<script>
+  const VOICE_ORDER = ["Soprano", "Alto", "Tenor", "Baritone", "Bass"];
+
+  function initials(name) {
+    return name.split(" ").map(p => p[0]).filter(Boolean).slice(0, 2).join("").toUpperCase();
+  }
+
+  function renderMember(member) {
+    const photoHtml = member.photo
+      ? `<img src="${member.photo}" alt="${member.name}">`
+      : `<div class="no-photo">${initials(member.name)}</div>`;
+    const bioHtml = member.bio ? `<p class="bio">${member.bio}</p>` : "";
+    return `
+      <div class="choir-card">
+        ${photoHtml}
+        <h3>${member.name}</h3>
+        ${bioHtml}
+      </div>
+    `;
+  }
+
+  function renderChoir() {
+    const container = document.getElementById("choirContainer");
+    const members = (typeof CHOIR_MEMBERS !== "undefined") ? CHOIR_MEMBERS : [];
+
+    if (members.length === 0) {
+      container.innerHTML = `<p class="empty-note">Member profiles are coming soon — check back after this season's "Meet the Choir" survey responses are in!</p>`;
+      return;
+    }
+
+    let html = "";
+    VOICE_ORDER.forEach(voice => {
+      const group = members.filter(m => m.voice === voice);
+      if (group.length === 0) return;
+      html += `
+        <div class="voice-group">
+          <h2>${voice}</h2>
+          <div class="choir-grid">${group.map(renderMember).join("")}</div>
+        </div>
+      `;
+    });
+
+    const other = members.filter(m => !VOICE_ORDER.includes(m.voice));
+    if (other.length > 0) {
+      html += `
+        <div class="voice-group">
+          <h2>Other</h2>
+          <div class="choir-grid">${other.map(renderMember).join("")}</div>
+        </div>
+      `;
+    }
+
+    container.innerHTML = html;
+  }
+
+  renderChoir();
+</script>
+
+</body>
+</html>

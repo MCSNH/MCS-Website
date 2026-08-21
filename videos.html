@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos — Manchester Choral Society</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .video-embed-card {
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .video-embed-card .frame-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+  .video-embed-card iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .video-embed-card .info {
+    padding: 0.9rem 1rem;
+  }
+  .video-embed-card .info h3 {
+    font-size: 1.02rem;
+  }
+  .playlist-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">Manchester Choral Society<small>Manchester, New Hampshire</small></a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="concerts.html">Concerts</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="advertisers.html">Advertisers</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Watch</p>
+    <h1>Videos</h1>
+    <p><a href="media.html">← Back to Media</a></p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="video-grid" id="videoGrid">
+
+      <!-- Video 1 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/gPXQ9uZ1DUk" title="Schubert Mass in E-flat major, D. 950" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>Schubert Mass in E-flat major, D. 950</h3></div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/M5R-m_7tR1s" title="Mendelssohn Psalm 42" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>Mendelssohn Psalm 42</h3></div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/rC-jh99n4fA" title="Stella Natalis — MCS December 2023" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>Stella Natalis — MCS December 2023</h3></div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/ScMX4Gul4_4" title="The Unarmed Child &amp; The Cry of Jeremiah — May 2023" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>The Unarmed Child &amp; The Cry of Jeremiah — May 2023</h3></div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/xR_yDi8JAkA" title="Mendelssohn Lobgesang — May 2022" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>Mendelssohn Lobgesang — May 2022</h3></div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-embed-card">
+        <div class="frame-wrap">
+          <iframe src="https://www.youtube.com/embed/6aFKT3JxsG8" title="Bluegrass Mass" allowfullscreen></iframe>
+        </div>
+        <div class="info"><h3>Bluegrass Mass</h3></div>
+      </div>
+
+    </div>
+
+    
+
+    <div class="playlist-cta">
+      <p style="color: var(--muted); margin-bottom: 0.8rem;">View more videos here:</p>
+      <a class="btn ghost" href="https://www.youtube.com/playlist?list=PLtLxsfViFdLihVIM-tTtW4yYt-KUbyQA7" target="_blank" rel="noopener">Full Playlist on YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Manchester Choral Society</h4>
+      <a href="about.html">About</a>
+      <a href="join.html">Join Us</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="media.html">Media</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:info@mcsnh.org">info@mcsnh.org</a>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Manchester Choral Society. Manchester, New Hampshire.</div>
+</footer>
+
+</body>
+</html>
