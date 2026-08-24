@@ -72,6 +72,9 @@ header.site {
   width: auto;
   display: block;
 }
+body.home .brand img.logo {
+  height: 88px;
+}
 .brand small {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -197,8 +200,9 @@ nav.primary a:hover, nav.primary a[aria-current="page"] {
 .photo-band img {
   display: block;
   width: 100%;
+  max-width: 717px;
   height: auto;
-  max-height: 520px;
+  margin: 0 auto;
   object-fit: cover;
 }
 .photo-caption {
