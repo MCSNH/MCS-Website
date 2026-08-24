@@ -63,20 +63,24 @@ header.site {
   padding: 1.1rem 0;
 }
 .brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.brand img.logo {
+  height: 56px;
+  width: auto;
+  display: block;
 }
 .brand small {
-  display: block;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-top: 0.15rem;
+  border-left: 1px solid var(--line);
+  padding-left: 0.85rem;
 }
 nav.primary ul {
   list-style: none;
@@ -113,6 +117,7 @@ nav.primary a:hover, nav.primary a[aria-current="page"] {
 .hero h1 {
   font-size: clamp(2.6rem, 5vw, 4rem);
   max-width: 16ch;
+  color: #F6EFE6;
 }
 .hero p.lede {
   font-size: 1.15rem;
@@ -182,6 +187,25 @@ nav.primary a:hover, nav.primary a[aria-current="page"] {
 
 @media (max-width: 800px) {
   .voice-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Photo band */
+.photo-band {
+  padding: 3.2rem 0;
+  background: var(--paper);
+}
+.photo-band img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+}
+.photo-caption {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 /* Sections */
