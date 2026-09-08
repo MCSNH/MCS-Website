@@ -10,49 +10,50 @@
 <link rel="apple-touch-icon" href="images/favicon-180.png">
 <link rel="stylesheet" href="styles.css">
 <style>
-  /* --- Hero photo overlay (added) --- */
+  /* --- Hero: photo on top, solid maroon block with text below (added) --- */
   .hero-photo{
-    position:relative;
-    min-height:min(78vh, 640px);
     display:flex;
-    align-items:flex-end;
+    flex-direction:column;
+  }
+  .hero-photo-image{
+    height:min(48vh, 420px);
     background:#2a0f14 url('images/mcs-performance-photo.jpg') center/cover no-repeat;
   }
-  .hero-photo::before{
-    content:"";
-    position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(30,8,12,0.15) 0%, rgba(30,8,12,0.55) 55%, rgba(30,8,12,0.92) 100%);
+  .hero-photo-content{
+    background:var(--wine, #6b1f2a);
+    padding:2.5rem 0 3rem;
   }
-  .hero-photo .wrap{
-    position:relative;
-    z-index:1;
-    width:100%;
-    padding-bottom:2.5rem;
+  .hero-photo-content .wrap{
     color:#fff;
   }
-  .hero-photo .eyebrow{
+  .hero-photo-content .eyebrow{
     color:#e8c88a; /* brass */
     letter-spacing:0.06em;
     text-transform:uppercase;
     font-size:0.85rem;
     margin-bottom:0.5rem;
   }
-  .hero-photo h1{
+  .hero-photo-content h1{
     font-family:'Cormorant Garamond', serif;
     font-size:clamp(2rem, 5vw, 3.4rem);
     line-height:1.1;
     margin:0 0 0.75rem;
     color:#fff;
-    text-shadow:0 2px 12px rgba(0,0,0,0.35);
   }
-  .hero-photo .lede{
+  .hero-photo-content .lede{
     max-width:46ch;
     color:#f1e6e2;
     margin:0 0 1.5rem;
     font-size:1.05rem;
   }
-  .hero-photo .btn{
+  .hero-photo-content .btn{
     display:inline-block;
+    background:#e8c88a; /* brass */
+    color:#4a1520;
+    font-weight:600;
+    padding:0.7rem 1.4rem;
+    border-radius:4px;
+    text-decoration:none;
   }
 
   /* Slimmer quick-links row, replacing the old text-heavy voice grid */
@@ -111,13 +112,16 @@ Open Sing — September 14, 2026. All voices welcome, no audition required. <a h
 </div>
 </header>
 
-<!-- Hero: photo with text overlay, replaces old text-only hero + separate photo band -->
+<!-- Hero: photo on top, solid maroon block with text below -->
 <section class="hero hero-photo">
+<div class="hero-photo-image"></div>
+<div class="hero-photo-content">
 <div class="wrap">
 <p class="eyebrow">66th Season · Founded 1961</p>
 <h1>Sixty-six years of voices raised together.</h1>
 <p class="lede">Manchester Choral Society is a community chorus for singers of every background, led by Music Director Dan Perkins.</p>
 <a class="btn" href="join.html">Find Your Voice →</a>
+</div>
 </div>
 </section>
 
