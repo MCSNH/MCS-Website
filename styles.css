@@ -92,7 +92,6 @@ nav.primary ul {
   margin: 0;
   padding: 0;
 }
-nav.primary li + li { margin-left: 2rem; } /* fallback for browsers without flex gap support */
 nav.primary a {
   font-size: 0.92rem;
   font-weight: 500;
