@@ -15,7 +15,8 @@
 <header class="site">
   <div class="wrap nav-row">
     <a href="index.html" class="brand"><img src="images/mcs-logo.png" alt="Manchester Choral Society" class="logo"><small>Manchester, New Hampshire</small></a>
-    <nav class="primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="primary" id="site-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -93,5 +94,6 @@
   <div class="wrap copy">© 2026 Manchester Choral Society. Manchester, New Hampshire.</div>
 </footer>
 
+<script src="nav.js" defer></script>
 </body>
 </html>
