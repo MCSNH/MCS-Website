@@ -17,8 +17,15 @@
     padding:0;
   }
   .hero-photo-image{
-    height:min(48vh, 420px);
-    background:#2a0f14 url('images/mcs-performance-photo.jpg') center/cover no-repeat;
+    background:#0a1a4a;
+    display:flex;
+    justify-content:center;
+  }
+  .hero-photo-image img{
+    display:block;
+    width:100%;
+    max-width:960px;
+    height:auto;
   }
   .hero-photo-content{
     background:var(--wine, #6b1f2a);
@@ -113,7 +120,7 @@
 
 <!-- Hero: photo on top, solid maroon block with text below -->
 <section class="hero hero-photo">
-<div class="hero-photo-image"></div>
+<div class="hero-photo-image"><a href="tickets.html"><img src="images/gloria-noel-flyer.jpg" alt="Gloria Noël, Season 66, Manchester Choral Society. Saturday, December 12 at 7:30 PM and Sunday, December 13 at 3:00 PM, Ste. Marie Parish, Manchester, NH. Get tickets."></a></div>
 <div class="hero-photo-content">
 <div class="wrap">
 <p class="eyebrow">66th Season · Founded 1961</p>
